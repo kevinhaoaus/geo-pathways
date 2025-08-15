@@ -1047,5 +1047,245 @@
     },
     "validation": null,
     "research_source": "Career Knowledge and Decision Making - Career Counseling Research (2023)"
+  },
+  {
+    "category": "values",
+    "subcategory": "work_life_balance",
+    "id": "values_01",
+    "text": "Having a good work-life balance is important to me in my career",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "Government Research": 0.8,
+      "Academic Research": 0.7,
+      "Environmental Consulting": 0.6,
+      "Field Geology": 0.5,
+      "Climate Data Science": 0.8
+    },
+    "validation": null,
+    "research_source": "Work Values Inventory (Super, 1970) - Earth Science adaptation"
+  },
+  {
+    "category": "values",
+    "subcategory": "helping_society",
+    "id": "values_02",
+    "text": "Making a positive impact on society and the environment is important to me",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "Environmental Consulting": 1,
+      "Climate Science": 1,
+      "Environmental Policy": 0.9,
+      "Conservation Science": 1,
+      "Sustainability Science": 1
+    },
+    "validation": null,
+    "research_source": "Work Values Inventory - Environmental careers adaptation"
+  },
+  {
+    "category": "values",
+    "subcategory": "financial_security",
+    "id": "values_03",
+    "text": "Financial security and good salary are important factors in my career choice",
+    "type": "likert_5",
+    "weight": 0.9,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "Petroleum Geology": 0.9,
+      "Environmental Consulting": 0.8,
+      "Geophysics": 0.8,
+      "Academic Research": 0.4,
+      "Government Research": 0.6
+    },
+    "validation": null,
+    "research_source": "Career Values Assessment - Vocational Psychology (2022)"
+  },
+  {
+    "category": "self-efficacy",
+    "subcategory": "math_skills",
+    "id": "self_efficacy_01",
+    "text": "I am confident in my ability to solve mathematical problems related to Earth systems",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "Climate Modeling": 1,
+      "Geophysics": 1,
+      "Atmospheric Science": 0.9,
+      "Environmental Engineering": 0.8,
+      "Hydrology": 0.9
+    },
+    "validation": null,
+    "research_source": "Science Self-Efficacy Scale - Bandura (2006) Earth Science adaptation"
+  },
+  {
+    "category": "self-efficacy",
+    "subcategory": "field_skills",
+    "id": "self_efficacy_02",
+    "text": "I feel confident conducting fieldwork and making observations in natural environments",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "Field Geology": 1,
+      "Environmental Science": 0.9,
+      "Marine Science": 0.8,
+      "Ecology": 0.9,
+      "Paleontology": 0.8
+    },
+    "validation": null,
+    "research_source": "Academic Self-Efficacy - Earth Science Skills Assessment"
+  },
+  {
+    "category": "self-efficacy",
+    "subcategory": "data_analysis",
+    "id": "self_efficacy_03",
+    "text": "I am confident I can learn to use computer software for analyzing scientific data",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "Climate Data Science": 1,
+      "Environmental Data Science": 1,
+      "GIS/Remote Sensing": 0.9,
+      "Research Science": 0.8,
+      "Environmental Modeling": 1
+    },
+    "validation": null,
+    "research_source": "STEM Self-Efficacy Inventory - Data Science skills"
   }
 ]
