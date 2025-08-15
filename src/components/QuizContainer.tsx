@@ -80,19 +80,21 @@ export default function QuizContainer({
     ];
 
     const newIndex = session.currentQuestionIndex + 1;
-    const updatedSession: AssessmentSession = {
-      ...session,
-      responses: updatedResponses,
-      currentQuestionIndex: newIndex,
-      lastActivity: new Date()
-    };
-
-    setSession(updatedSession);
-
-    // Check if quiz is complete
+    
+    // Check if quiz is complete BEFORE updating session
     if (newIndex >= questions.length) {
+      // Complete the assessment
       await completeAssessment(updatedResponses);
     } else {
+      // Continue to next question
+      const updatedSession: AssessmentSession = {
+        ...session,
+        responses: updatedResponses,
+        currentQuestionIndex: newIndex,
+        lastActivity: new Date()
+      };
+
+      setSession(updatedSession);
       setCurrentQuestion(questions[newIndex]);
     }
   };

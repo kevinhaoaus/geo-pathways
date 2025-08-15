@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import type { Question, AssessmentResponse } from '@/types';
 
@@ -25,14 +25,23 @@ export default function QuestionScreen({
 }: QuestionScreenProps) {
   const [selectedValue, setSelectedValue] = useState<number | undefined>(currentResponse);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Reset form state when question changes
+  useEffect(() => {
+    setSelectedValue(currentResponse);
+    setIsSubmitting(false);
+    setIsAnimating(false);
+  }, [question.id, currentResponse]);
 
   const handleOptionSelect = (value: number) => {
     setSelectedValue(value);
   };
 
   const handleNext = () => {
-    if (selectedValue === undefined) return;
+    if (selectedValue === undefined || isSubmitting) return;
 
+    setIsSubmitting(true);
     setIsAnimating(true);
 
     const response: AssessmentResponse = {
@@ -45,6 +54,7 @@ export default function QuestionScreen({
     setTimeout(() => {
       onResponse(response);
       setIsAnimating(false);
+      setIsSubmitting(false);
     }, 200);
   };
 
@@ -218,14 +228,19 @@ export default function QuestionScreen({
         <div>
           <button
             onClick={handleNext}
-            disabled={selectedValue === undefined || isAnimating}
+            disabled={selectedValue === undefined || isAnimating || isSubmitting}
             className={`
               btn-primary flex items-center
-              ${selectedValue === undefined ? 'opacity-50 cursor-not-allowed' : ''}
+              ${selectedValue === undefined || isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}
               ${isAnimating ? 'animate-pulse' : ''}
             `}
           >
-            {isLast ? (
+            {isSubmitting ? (
+              <>
+                Submitting...
+                <div className="w-4 h-4 ml-2 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              </>
+            ) : isLast ? (
               <>
                 Complete Assessment
                 <ChevronRightIcon className="w-4 h-4 ml-2" />
