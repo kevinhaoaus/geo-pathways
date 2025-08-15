@@ -161,11 +161,12 @@ export default function QuizContainer({
   };
 
   const getQuestionCategory = (question: Question): string => {
-    const categoryLabels = {
+    const categoryLabels: { [key: string]: string } = {
       'holland-code': 'Interest Profile',
       'science-identity': 'Science Identity',
       'values': 'Career Values',
-      'self-efficacy': 'Skills & Confidence'
+      'self-efficacy': 'Skills & Confidence',
+      'outcome-expectations': 'Career Expectations'
     };
     return categoryLabels[question.category] || question.category;
   };

@@ -129,7 +129,8 @@ function generateQuestionFileHeader(category, subcategory) {
   const title = subcategoryTitles[subcategory] || `${subcategory.charAt(0).toUpperCase() + subcategory.slice(1)} Questions`;
   const parentTitle = categoryTitles[category] || category;
   
-  return `# ${title} - Earth Science Assessment\n\n*Part of the ${parentTitle} for Earth Science career pathways.*\n\n`;\n}
+  return `# ${title} - Earth Science Assessment\n\n*Part of the ${parentTitle} for Earth Science career pathways.*\n\n`;
+}
 
 /**
  * Generate individual question section

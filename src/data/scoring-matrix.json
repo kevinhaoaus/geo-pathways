@@ -1,0 +1,17 @@
+{
+  "hollandCodeWeights": {
+    "realistic": 1.1,
+    "investigative": 1.2,
+    "artistic": 1,
+    "social": 1.05,
+    "enterprising": 1,
+    "conventional": 1
+  },
+  "pathwayMatchingWeights": {
+    "interests": 0.4,
+    "identity": 0.25,
+    "selfEfficacy": 0.2,
+    "values": 0.1,
+    "knowledge": 0.05
+  }
+}

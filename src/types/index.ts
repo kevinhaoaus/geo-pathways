@@ -198,14 +198,14 @@ export interface AssessmentResults {
   pathwayMatches: PathwayMatch[];
   recommendations: Recommendation[];
   confidenceScore: number;
-  // Enhanced assessments
-  outcomeExpectations: OutcomeExpectations;
-  environmentalFactors: EnvironmentalFactors;
-  multipleIntelligences: MultipleIntelligences;
-  learningStyle: LearningStyle;
-  workEnvironment: WorkEnvironment;
-  careerMaturity: CareerMaturity;
-  skillsGapAnalysis: SkillsGapAnalysis;
+  // Enhanced assessments (optional for now)
+  outcomeExpectations?: OutcomeExpectations;
+  environmentalFactors?: EnvironmentalFactors;
+  multipleIntelligences?: MultipleIntelligences;
+  learningStyle?: LearningStyle;
+  workEnvironment?: WorkEnvironment;
+  careerMaturity?: CareerMaturity;
+  skillsGapAnalysis?: SkillsGapAnalysis;
   peerComparison?: PeerComparison;
 }
 

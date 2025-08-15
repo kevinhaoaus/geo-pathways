@@ -138,7 +138,7 @@ export default function ActionPlan({ pathwayMatches, studentYear }: ActionPlanPr
     setCompletedItems(newCompleted);
   };
 
-  const getCategoryIcon = (category: ActionItem['category']) => {
+  const getCategoryIcon = (category: string) => {
     switch (category) {
       case 'subjects': return AcademicCapIcon;
       case 'experience': return BriefcaseIcon;
@@ -149,7 +149,7 @@ export default function ActionPlan({ pathwayMatches, studentYear }: ActionPlanPr
     }
   };
 
-  const getCategoryColor = (category: ActionItem['category']) => {
+  const getCategoryColor = (category: string) => {
     switch (category) {
       case 'subjects': return 'bg-blue-100 text-blue-800';
       case 'experience': return 'bg-green-100 text-green-800';
@@ -160,7 +160,7 @@ export default function ActionPlan({ pathwayMatches, studentYear }: ActionPlanPr
     }
   };
 
-  const getDifficultyEmoji = (difficulty: ActionItem['difficulty']) => {
+  const getDifficultyEmoji = (difficulty: string) => {
     switch (difficulty) {
       case 'easy': return '🟢';
       case 'medium': return '🟡';  

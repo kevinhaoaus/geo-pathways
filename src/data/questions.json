@@ -1,0 +1,1051 @@
+[
+  {
+    "category": "scientific_problems",
+    "subcategory": "investigative",
+    "id": "investigative_01",
+    "text": "I enjoy studying complex problems in science and mathematics",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Climate Data Science": 1,
+      "Geophysics": 1,
+      "Atmospheric Science": 0.9,
+      "Oceanography": 0.9,
+      "Environmental Modeling": 1
+    },
+    "validation": null,
+    "research_source": "Holland RIASEC with Earth Science Enhancement - Vocational Psychology (2022)"
+  },
+  {
+    "category": "natural_systems",
+    "subcategory": "investigative",
+    "id": "investigative_02",
+    "text": "I find it fascinating to understand how natural systems work",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Ecology/Environmental Science": 1,
+      "Hydrology": 1,
+      "Climate Science": 1,
+      "Biogeochemistry": 1,
+      "Earth System Science": 1
+    },
+    "validation": null,
+    "research_source": "Science Interest and Career Choice - Journal of Research in Science Teaching (2023)"
+  },
+  {
+    "category": "research_conduct",
+    "subcategory": "investigative",
+    "id": "investigative_03",
+    "text": "I would enjoy conducting research to answer scientific questions",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Academic Research": 1,
+      "Government Research": 0.9,
+      "Private R&D": 0.8,
+      "Graduate School Track": 1,
+      "National Lab Careers": 0.9
+    },
+    "validation": null,
+    "research_source": "Research Interest Predictors - Science Education Research (2023)"
+  },
+  {
+    "category": "data_analysis",
+    "subcategory": "investigative",
+    "id": "investigative_04",
+    "text": "I like analyzing data to discover patterns and relationships",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Environmental Data Science": 1,
+      "Climate Analysis": 1,
+      "GIS/Remote Sensing": 0.9,
+      "Statistical Modeling": 1,
+      "Bioinformatics": 0.8
+    },
+    "validation": null,
+    "research_source": "Data Science Skills in Earth Sciences - AGU Career Survey (2023)"
+  },
+  {
+    "category": "climate_systems",
+    "subcategory": "investigative",
+    "id": "investigative_05",
+    "text": "I'm curious about how climate change affects different regions",
+    "type": "likert_5",
+    "weight": 1.3,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Climate Science": 1,
+      "Environmental Impact Assessment": 0.9,
+      "Sustainability Science": 0.9,
+      "Policy Research": 0.7,
+      "Regional Planning": 0.6
+    },
+    "validation": null,
+    "research_source": "Climate Science Career Interest - NOAA Education Survey (2023)"
+  },
+  {
+    "category": "scientific_literature",
+    "subcategory": "investigative",
+    "id": "investigative_06",
+    "text": "I enjoy reading scientific articles and research studies",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Graduate School Track": 1,
+      "Research Scientist": 1,
+      "Science Policy": 0.8,
+      "Technical Writing": 0.7,
+      "Academic Career": 1
+    },
+    "validation": null,
+    "research_source": "Academic Preparation Indicators - Science Career Development (2022)"
+  },
+  {
+    "category": "hypothesis_testing",
+    "subcategory": "investigative",
+    "id": "investigative_07",
+    "text": "I like developing hypotheses and designing experiments to test them",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Research Scientist": 1,
+      "Environmental Consulting": 0.8,
+      "Quality Control": 0.7,
+      "Graduate Research": 1,
+      "Product Development": 0.6
+    },
+    "validation": null,
+    "research_source": "Scientific Method Application - Earth Science Education Research (2023)"
+  },
+  {
+    "category": "geological_processes",
+    "subcategory": "investigative",
+    "id": "investigative_08",
+    "text": "I want to understand the processes that shape Earth's surface",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Geology": 1,
+      "Geomorphology": 1,
+      "Natural Hazards": 0.9,
+      "Planetary Science": 0.8,
+      "Surface Processes": 1
+    },
+    "validation": null,
+    "research_source": "Earth Processes Understanding - Geological Education (2023)"
+  },
+  {
+    "category": "mathematical_modeling",
+    "subcategory": "investigative",
+    "id": "investigative_09",
+    "text": "I enjoy using mathematical models to predict natural phenomena",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Atmospheric Modeling": 1,
+      "Hydrologic Modeling": 1,
+      "Climate Modeling": 1,
+      "Geophysical Modeling": 1,
+      "Computational Earth Science": 1
+    },
+    "validation": null,
+    "research_source": "Quantitative Skills in Earth Sciences - NSF STEM Survey (2023)"
+  },
+  {
+    "category": "technology_instruments",
+    "subcategory": "investigative",
+    "id": "investigative_10",
+    "text": "I'm interested in learning about new technologies and instruments",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Remote Sensing": 0.9,
+      "Geophysics": 0.9,
+      "Environmental Monitoring": 0.8,
+      "Tech Development": 0.8,
+      "Innovation Sector": 0.7
+    },
+    "validation": null,
+    "research_source": "Technology Integration in Earth Sciences - IEEE Geoscience (2023)"
+  },
+  {
+    "category": "interdisciplinary_connections",
+    "subcategory": "investigative",
+    "id": "investigative_11",
+    "text": "I enjoy connecting ideas from different scientific fields",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Earth System Science": 1,
+      "Biogeochemistry": 1,
+      "Astrobiology": 0.8,
+      "Environmental Engineering": 0.8,
+      "Sustainability Science": 0.9
+    },
+    "validation": null,
+    "research_source": "Interdisciplinary Science Careers - Nature Careers Survey (2023)"
+  },
+  {
+    "category": "long_term_studies",
+    "subcategory": "investigative",
+    "id": "investigative_12",
+    "text": "I would enjoy working on long-term research projects that take years to complete",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Climate Research": 1,
+      "Academic Research": 1,
+      "Government Research": 0.9,
+      "Long-term Monitoring": 1,
+      "Paleoclimatology": 1
+    },
+    "validation": null,
+    "research_source": "Research Persistence in Earth Sciences - Career Longitudinal Study (2022)"
+  },
+  {
+    "category": "hands_on_work",
+    "subcategory": "realistic",
+    "id": "realistic_01",
+    "text": "I enjoy working with my hands to build or fix things outdoors",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Field Geology": 0.9,
+      "Environmental Science": 0.7,
+      "Hydrology": 0.8,
+      "Geophysics": 0.6,
+      "Climate Data Science": 0.3
+    },
+    "validation": null,
+    "research_source": "Holland (1997) Vocational Preference Inventory - Enhanced for Earth Science"
+  },
+  {
+    "category": "laboratory_equipment",
+    "subcategory": "realistic",
+    "id": "realistic_02",
+    "text": "I prefer hands-on laboratory work over theoretical discussions",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Geochemistry": 0.8,
+      "Environmental Laboratory Science": 0.9,
+      "Geology": 0.7,
+      "Oceanography": 0.8,
+      "Meteorology": 0.6
+    },
+    "validation": null,
+    "research_source": "Holland RIASEC - Laboratory adaptation for Earth Sciences"
+  },
+  {
+    "category": "field_collection",
+    "subcategory": "realistic",
+    "id": "realistic_03",
+    "text": "I would enjoy collecting rock, mineral, or fossil specimens in the field",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Geology": 1,
+      "Paleontology": 1,
+      "Environmental Science": 0.5,
+      "Hydrology": 0.4,
+      "Geophysics": 0.6
+    },
+    "validation": null,
+    "research_source": "Earth Science Career Interest Survey - USGS (2023)"
+  },
+  {
+    "category": "problem_solving_tools",
+    "subcategory": "realistic",
+    "id": "realistic_04",
+    "text": "I like using tools and equipment to solve practical problems",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Geophysics": 0.8,
+      "Environmental Engineering": 0.8,
+      "Hydrology": 0.7,
+      "Field Geology": 0.9,
+      "Remote Sensing": 0.7
+    },
+    "validation": null,
+    "research_source": "Holland Code Applications in STEM - Journal of Vocational Behavior (2022)"
+  },
+  {
+    "category": "outdoor_environments",
+    "subcategory": "realistic",
+    "id": "realistic_05",
+    "text": "I prefer working outdoors rather than in an office",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Field Geology": 1,
+      "Environmental Consulting": 0.8,
+      "Marine Science": 0.7,
+      "Climate Data Science": 0.2,
+      "GIS Analysis": 0.3
+    },
+    "validation": null,
+    "research_source": "Work Environment Preferences in Earth Sciences - AGU Survey (2023)"
+  },
+  {
+    "category": "mechanical_systems",
+    "subcategory": "realistic",
+    "id": "realistic_06",
+    "text": "I enjoy understanding how mechanical systems and instruments work",
+    "type": "likert_5",
+    "weight": 0.9,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Geophysics": 0.8,
+      "Meteorology": 0.7,
+      "Oceanography": 0.8,
+      "Environmental Monitoring": 0.7,
+      "Seismology": 0.9
+    },
+    "validation": null,
+    "research_source": "Technical Skills in Earth Science Careers - NSF Report (2022)"
+  },
+  {
+    "category": "construction_installation",
+    "subcategory": "realistic",
+    "id": "realistic_07",
+    "text": "I would enjoy installing and maintaining scientific equipment in the field",
+    "type": "likert_5",
+    "weight": 0.8,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Environmental Monitoring": 0.9,
+      "Hydrology": 0.8,
+      "Geophysics": 0.8,
+      "Meteorology": 0.7,
+      "Field Research": 0.8
+    },
+    "validation": null,
+    "research_source": "Practical Skills Assessment - Earth Science Education (2023)"
+  },
+  {
+    "category": "physical_samples",
+    "subcategory": "realistic",
+    "id": "realistic_08",
+    "text": "I find satisfaction in preparing and analyzing physical samples",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Dislike"
+      },
+      {
+        "value": 2,
+        "label": "Dislike"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Like"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Like"
+      }
+    ],
+    "pathwayScoring": {
+      "Geochemistry": 0.9,
+      "Environmental Chemistry": 0.8,
+      "Geology": 0.8,
+      "Soil Science": 0.9,
+      "Materials Science": 0.7
+    },
+    "validation": null,
+    "research_source": "Laboratory Skills in Geosciences - American Geosciences Institute (2023)"
+  },
+  {
+    "category": "career_research",
+    "subcategory": "exploration",
+    "id": "exploration_01",
+    "text": "I have researched different Earth science careers online",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {},
+    "validation": "Cronbachs alpha = 0.78, Predictive validity r = 0.42 for STEM major choice",
+    "research_source": "Science Identity Development Scale - Carlone & Johnson (2007), Earth Science adaptation"
+  },
+  {
+    "category": "professional_contact",
+    "subcategory": "exploration",
+    "id": "exploration_02",
+    "text": "I have talked with professionals in Earth science careers about their work",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {},
+    "validation": null,
+    "research_source": "Professional Network Exposure - STEM Career Development (2022)"
+  },
+  {
+    "category": "event_participation",
+    "subcategory": "exploration",
+    "id": "exploration_03",
+    "text": "I have attended science fairs, Earth Day events, or environmental conferences",
+    "type": "likert_5",
+    "weight": 1.1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {},
+    "validation": null,
+    "research_source": "Extracurricular Science Engagement - Science Education Research (2023)"
+  },
+  {
+    "category": "educational_planning",
+    "subcategory": "exploration",
+    "id": "exploration_04",
+    "text": "I have thought about what Earth science major I want to pursue in college",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {},
+    "validation": null,
+    "research_source": "College Major Exploration - Educational Psychology (2022)"
+  },
+  {
+    "category": "experience_seeking",
+    "subcategory": "exploration",
+    "id": "exploration_05",
+    "text": "I have explored internship opportunities in environmental or geological fields",
+    "type": "likert_5",
+    "weight": 1.2,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {},
+    "validation": null,
+    "research_source": "Internship Impact on Career Choice - Journal of Career Development (2023)"
+  },
+  {
+    "category": "citizen_science",
+    "subcategory": "exploration",
+    "id": "exploration_06",
+    "text": "I have participated in citizen science projects related to Earth systems",
+    "type": "likert_5",
+    "weight": 1,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {},
+    "validation": null,
+    "research_source": "Citizen Science Participation and Career Interest - Environmental Education (2022)"
+  },
+  {
+    "category": "market_awareness",
+    "subcategory": "exploration",
+    "id": "exploration_07",
+    "text": "I have researched salary ranges and job prospects in Earth sciences",
+    "type": "likert_5",
+    "weight": 0.9,
+    "researchSource": null,
+    "responseOptions": [
+      {
+        "value": 1,
+        "label": "Strongly Disagree"
+      },
+      {
+        "value": 2,
+        "label": "Disagree"
+      },
+      {
+        "value": 3,
+        "label": "Neutral"
+      },
+      {
+        "value": 4,
+        "label": "Agree"
+      },
+      {
+        "value": 5,
+        "label": "Strongly Agree"
+      }
+    ],
+    "pathwayScoring": {
+      "**High Exploration**": null,
+      "**Moderate Exploration**": null,
+      "**Low Exploration**": null,
+      "Internal consistency": null,
+      "Test-retest reliability": null,
+      "Convergent validity with career maturity scales": null,
+      "Predictive validity for STEM major choice": null,
+      "**High Explorers**": null,
+      "**Moderate Explorers**": null,
+      "**Low Explorers**": null
+    },
+    "validation": null,
+    "research_source": "Career Knowledge and Decision Making - Career Counseling Research (2023)"
+  }
+]

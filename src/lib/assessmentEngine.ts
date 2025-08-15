@@ -495,7 +495,7 @@ export class AssessmentEngine {
   }
 
   private getValueDescription(valueName: string): string {
-    const descriptions = {
+    const descriptions: { [key: string]: string } = {
       'Environmental Stewardship': 'Protecting and preserving natural resources and ecosystems',
       'Scientific Discovery': 'Advancing human knowledge through research and investigation',
       'Work Environment': 'The physical and social setting where work takes place',

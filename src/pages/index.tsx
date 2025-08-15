@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useState } from 'react';
 import QuizContainer from '@/components/QuizContainer';
 import WelcomeScreen from '@/components/WelcomeScreen';
-import ResultsScreen from '@/components/ResultsScreen';
 import { AssessmentEngine } from '@/lib/assessmentEngine';
 import type { Question, CareerPathway, ScoringMatrix, AssessmentResults } from '@/types';
 
@@ -56,10 +55,20 @@ export default function Home({ questions, pathways, scoringMatrix }: HomeProps) 
       
       case 'results':
         return results ? (
-          <ResultsScreen
-            results={results}
-            onRetake={handleRetakeQuiz}
-          />
+          <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 py-8">
+            <div className="max-w-4xl mx-auto px-4">
+              <h1 className="text-3xl font-bold text-center mb-8">Assessment Complete!</h1>
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <pre>{JSON.stringify(results, null, 2)}</pre>
+                <button 
+                  onClick={handleRetakeQuiz}
+                  className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg"
+                >
+                  Retake Assessment
+                </button>
+              </div>
+            </div>
+          </div>
         ) : null;
       
       default:
@@ -140,9 +149,9 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     const scoringData = await import('@/data/scoring-matrix.json');
 
     // Validate and process the data
-    const questions: Question[] = questionsData.default || [];
-    const pathways: CareerPathway[] = pathwaysData.default || [];
-    const scoringMatrix: ScoringMatrix = scoringData.default || {
+    const questions: Question[] = (questionsData.default || []) as unknown as Question[];
+    const pathways: CareerPathway[] = (pathwaysData.default || []) as unknown as CareerPathway[];
+    const scoringMatrix: ScoringMatrix = (scoringData.default || {
       hollandCodeWeights: { R: 1.1, I: 1.2, A: 1.0, S: 1.05, E: 1.0, C: 1.0 },
       pathwayMatchingWeights: {
         interests: 0.4,
@@ -157,7 +166,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
         minRecommendations: 3,
         maxRecommendations: 8
       }
-    };
+    }) as unknown as ScoringMatrix;
 
     // Validate that we have content
     if (questions.length === 0) {
