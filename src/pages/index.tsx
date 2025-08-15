@@ -144,9 +144,9 @@ export default function Home({ questions, pathways, scoringMatrix }: HomeProps) 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   try {
     // Import compiled content data
-    const questionsData = await import('@/data/questions.json');
-    const pathwaysData = await import('@/data/pathways.json');
-    const scoringData = await import('@/data/scoring-matrix.json');
+    const questionsData = await import('../data/questions.json');
+    const pathwaysData = await import('../data/pathways.json');
+    const scoringData = await import('../data/scoring-matrix.json');
 
     // Validate and process the data
     const questions: Question[] = (questionsData.default || []) as unknown as Question[];
