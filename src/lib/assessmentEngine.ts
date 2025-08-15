@@ -150,49 +150,47 @@ export class AssessmentEngine {
   /**
    * Calculate Self-Efficacy profile across different skill levels
    */
+  /**
+   * Calculate Self-Efficacy profile across different skill levels
+   */
   private calculateSelfEfficacy(responseMap: Map<string, number>): SelfEfficacyProfile {
     const selfEfficacyQuestions = this.questions.filter(q => q.category === 'self-efficacy');
     
-    // Group questions by difficulty level (assuming questions are tagged with levels)
-    const levels = {
-      basic: selfEfficacyQuestions.filter(q => q.subcategory.includes('basic') || q.subcategory.includes('level1')),
-      applied: selfEfficacyQuestions.filter(q => q.subcategory.includes('applied') || q.subcategory.includes('level2')),
-      inquiry: selfEfficacyQuestions.filter(q => q.subcategory.includes('inquiry') || q.subcategory.includes('level3')),
-      innovation: selfEfficacyQuestions.filter(q => q.subcategory.includes('innovation') || q.subcategory.includes('level4'))
+    // Group questions by skill type based on actual subcategories
+    const skillGroups = {
+      math: selfEfficacyQuestions.filter(q => q.subcategory.includes('math')),
+      field: selfEfficacyQuestions.filter(q => q.subcategory.includes('field')),
+      data: selfEfficacyQuestions.filter(q => q.subcategory.includes('data')),
+      general: selfEfficacyQuestions.filter(q => !q.subcategory.includes('math') && !q.subcategory.includes('field') && !q.subcategory.includes('data'))
     };
 
-    const levelScores = {
-      basic: this.calculateAverageScore(levels.basic, responseMap),
-      applied: this.calculateAverageScore(levels.applied, responseMap),
-      inquiry: this.calculateAverageScore(levels.inquiry, responseMap),
-      innovation: this.calculateAverageScore(levels.innovation, responseMap)
+    const skillScores = {
+      basic: this.calculateAverageScore([...skillGroups.math, ...skillGroups.general], responseMap),
+      applied: this.calculateAverageScore(skillGroups.field, responseMap),
+      inquiry: this.calculateAverageScore(skillGroups.data, responseMap),
+      innovation: this.calculateAverageScore(selfEfficacyQuestions, responseMap)
     };
 
-    // Calculate weighted overall score (higher levels weighted more)
-    const overall = (
-      levelScores.basic * 0.15 +
-      levelScores.applied * 0.25 +
-      levelScores.inquiry * 0.35 +
-      levelScores.innovation * 0.25
-    );
+    // Calculate weighted overall score
+    const overall = skillScores.innovation > 0 ? skillScores.innovation : 
+      (skillScores.basic * 0.3 + skillScores.applied * 0.4 + skillScores.inquiry * 0.3);
 
     // Identify strengths and development areas
     const strengths: string[] = [];
     const developmentAreas: string[] = [];
 
-    if (levelScores.basic >= 4.0) strengths.push('Strong foundational knowledge');
-    if (levelScores.applied >= 4.0) strengths.push('Confident applying concepts');
-    if (levelScores.inquiry >= 4.0) strengths.push('Research and investigation skills');
-    if (levelScores.innovation >= 4.0) strengths.push('Creative problem-solving abilities');
+    if (skillScores.basic >= 4.0) strengths.push('Strong foundational confidence');
+    if (skillScores.applied >= 4.0) strengths.push('Confident in practical applications');
+    if (skillScores.inquiry >= 4.0) strengths.push('Strong data analysis confidence');
+    if (overall >= 4.0) strengths.push('Overall high science confidence');
 
-    if (levelScores.basic < 3.0) developmentAreas.push('Build foundational knowledge');
-    if (levelScores.applied < 3.0) developmentAreas.push('Practice applying concepts');
-    if (levelScores.inquiry < 3.0) developmentAreas.push('Develop research skills');
-    if (levelScores.innovation < 3.0) developmentAreas.push('Strengthen creative problem-solving');
+    if (skillScores.basic < 3.0) developmentAreas.push('Build foundational confidence');
+    if (skillScores.applied < 3.0) developmentAreas.push('Gain more hands-on experience');
+    if (skillScores.inquiry < 3.0) developmentAreas.push('Practice data analysis skills');
 
     return {
       overall,
-      levels: levelScores,
+      levels: skillScores,
       strengths,
       developmentAreas
     };
