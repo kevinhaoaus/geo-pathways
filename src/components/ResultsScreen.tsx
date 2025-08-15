@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { marked } from 'marked';
 import { 
   AcademicCapIcon, 
   ChartBarIcon, 
@@ -15,6 +16,15 @@ interface ResultsScreenProps {
 
 export default function ResultsScreen({ results, onRetake }: ResultsScreenProps) {
   const [showAllMatches, setShowAllMatches] = useState(false);
+
+  const renderMarkdown = (text: string) => {
+    // Configure marked for safe rendering
+    marked.setOptions({
+      breaks: true,
+      gfm: true
+    });
+    return { __html: marked(text) };
+  };
 
   const getPathwayImageUrl = (pathway: any) => {
     if (pathway.image) {
@@ -160,9 +170,10 @@ export default function ResultsScreen({ results, onRetake }: ResultsScreenProps)
                             </div>
                           </div>
                         </div>
-                        <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                          {match.pathway.overview || 'Explore opportunities in this exciting Earth Science field.'}
-                        </p>
+                        <div 
+                          className="text-gray-700 text-lg leading-relaxed mb-4 prose prose-lg max-w-none prose-headings:text-gray-900 prose-strong:text-gray-900 prose-strong:font-semibold prose-ul:my-2 prose-li:my-1"
+                          dangerouslySetInnerHTML={renderMarkdown(match.pathway.overview || 'Explore opportunities in this exciting Earth Science field.')}
+                        />
                       </div>
                     </div>
 
