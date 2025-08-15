@@ -42,7 +42,6 @@ export default function QuestionScreen({
     if (selectedValue === undefined || isSubmitting) return;
 
     setIsSubmitting(true);
-    setIsAnimating(true);
 
     const response: AssessmentResponse = {
       questionId: question.id,
@@ -50,12 +49,8 @@ export default function QuestionScreen({
       timestamp: new Date()
     };
 
-    // Small delay for visual feedback
-    setTimeout(() => {
-      onResponse(response);
-      setIsAnimating(false);
-      setIsSubmitting(false);
-    }, 200);
+    // Call onResponse immediately without delay to prevent flashing
+    onResponse(response);
   };
 
   const getQuestionTypeDescription = () => {

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import QuizContainer from '@/components/QuizContainer';
 import WelcomeScreen from '@/components/WelcomeScreen';
+import ResultsScreen from '@/components/ResultsScreen';
 import { AssessmentEngine } from '@/lib/assessmentEngine';
 import type { Question, CareerPathway, ScoringMatrix, AssessmentResults } from '@/types';
 
@@ -55,20 +56,10 @@ export default function Home({ questions, pathways, scoringMatrix }: HomeProps) 
       
       case 'results':
         return results ? (
-          <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 py-8">
-            <div className="max-w-4xl mx-auto px-4">
-              <h1 className="text-3xl font-bold text-center mb-8">Assessment Complete!</h1>
-              <div className="bg-white rounded-xl shadow-lg p-6">
-                <pre>{JSON.stringify(results, null, 2)}</pre>
-                <button 
-                  onClick={handleRetakeQuiz}
-                  className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg"
-                >
-                  Retake Assessment
-                </button>
-              </div>
-            </div>
-          </div>
+          <ResultsScreen 
+            results={results}
+            onRetake={handleRetakeQuiz}
+          />
         ) : null;
       
       default:
