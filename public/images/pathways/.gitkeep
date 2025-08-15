@@ -1,0 +1,11 @@
+# Pathway Images Directory
+
+This directory contains images for career pathways displayed in the results.
+
+## Image Requirements
+- Format: JPG, PNG, or WebP
+- Size: Recommended 400x300px or similar aspect ratio
+- Naming: Use pathway_id as filename (e.g., geology.jpg, climate-data-science.png)
+
+## Usage
+Images are automatically loaded based on the pathway_id field in the pathway data.

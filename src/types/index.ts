@@ -163,6 +163,7 @@ export interface CareerPathway {
   last_updated?: string;
   data_sources?: string[];
   overview: string;
+  image?: string; // Optional image filename or URL
   careerProgression?: any;
   education?: any;
   skills?: any;
